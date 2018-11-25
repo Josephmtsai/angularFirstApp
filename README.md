@@ -14,3 +14,19 @@ ng g c servers
 
 > create component under app folder
 > auto add to app.component.ts
+
+### hint
+
+ng g c warningAlert
+
+> create component
+
+component :
+
+selector: '[header-component]',
+
+> 代表 attribute <div header-component> </div>
+
+selector: '.header-component',
+
+> 代表 class
