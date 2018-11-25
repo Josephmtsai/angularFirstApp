@@ -30,3 +30,5 @@ selector: '[header-component]',
 selector: '.header-component',
 
 > 代表 class
+
+string interpolation
