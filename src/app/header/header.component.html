@@ -2,8 +2,10 @@
   <div class="row">
     <div class="col-lg-12"><span class="headerStyle"> header</span></div>
 
-    {{ headerValue }} {{ headerId === 10 ? 'hi' : 'No' }} {{ getHeaderValue() }} <input type="text" class="form-control" (input)="onUpdateServer($event)" />
-    <button class="btn btn-primary" (click)="onChangeHeaderValue()" [disabled]="allow">Add</button>
+    {{ headerValue }} {{ headerId === 10 ? 'hi' : 'No' }} {{ getHeaderValue() }}
+
+    <!-- <input type="text" class="form-control" (input)="onUpdateServer($event)" /> -->
+    <input type="text" class="form-control" [(ngModel)]="serverName" /> <button class="btn btn-primary" (click)="onChangeHeaderValue()" [disabled]="allow">Add</button>
 
     {{ serverName }}
   </div>

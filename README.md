@@ -44,3 +44,7 @@ selector: '.header-component',
 (click)="onCreateServer"
 教學
 https://josephdotw.blogspot.com/2017/03/angular-2data-binding.html
+
+### two way Binding
+
+ngModel 應該是 directive
