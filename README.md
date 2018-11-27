@@ -31,4 +31,16 @@ selector: '.header-component',
 
 > 代表 class
 
-string interpolation
+### string interpolation
+
+{{變數}}
+
+### property binding
+
+[disabled]="allow"
+
+### event binding
+
+(click)="onCreateServer"
+教學
+https://josephdotw.blogspot.com/2017/03/angular-2data-binding.html
