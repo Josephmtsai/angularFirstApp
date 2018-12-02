@@ -10,6 +10,7 @@ export class headerComponent {
   headerValue: string = 'asdasd';
   allow: boolean = true;
   serverName: string = 'Name';
+  userName: string = '';
   getHeaderValue = () => {
     return this.headerValue;
   };
@@ -19,10 +20,13 @@ export class headerComponent {
     }, 2000);
   }
   onChangeHeaderValue() {
-    this.headerValue = 'changed!!!!!';
+    this.headerValue = 'changed!!!!!' + this.serverName;
   }
   onUpdateServer($event: Event) {
     this.serverName = (<HTMLInputElement>$event.target).value;
     console.log($event);
+  }
+  oncleanUpUserName() {
+    this.userName = '';
   }
 }

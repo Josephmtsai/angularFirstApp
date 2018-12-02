@@ -48,3 +48,11 @@ https://josephdotw.blogspot.com/2017/03/angular-2data-binding.html
 ### two way Binding
 
 ngModel 應該是 directive
+
+### Directive
+
+\*ngif
+
+> - strucutre directive => add or remove element
+
+> attribute directive => change element they pleace on
