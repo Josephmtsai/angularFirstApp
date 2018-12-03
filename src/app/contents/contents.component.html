@@ -1,10 +1,22 @@
 <div class="container">
   <div class="row">
+    <div class="col-lg-12"><button class="btn btn-primary" (click)="onDisplayDetails()">Display Details</button></div>
+  </div>
+  <div class="row" *ngIf="displayDetails">
     <div class="col-lg-12">
-      <div [ngStyle]="{ backgroundColor: getColor() }">{{ serverInfo }}</div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Secret Password</h1>
+          <p class="lead">Tuna</p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-12"><button class="btn btn-primary" (click)="onAddServer()">Add</button> <warning-component *ngFor="let a of serverList"></warning-component></div>
+    <div class="col-lg-12">
+      <div *ngFor="let history of serverHistoryList; index as i">
+        <span [ngStyle]="{ 'background-color': i > 4 ? 'blue' : 'white' }" [ngClass]="{ textColorWhite: i > 4 }">Index: {{ i }} ,History: {{ history }} </span>
+      </div>
+    </div>
   </div>
 </div>
