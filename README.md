@@ -56,3 +56,11 @@ ngModel 應該是 directive
 > - strucutre directive => add or remove element
 
 > attribute directive => change element they pleace on
+
+# Data Binding
+* View Encapsulation CSS 作用於當下的TEMPLATE (Shadow Dom 技術 )  可以設定套用成全部
+* Custom Event Binding => 傳入參數 需要引入 EventEmitter , new EventEmitter<Recipe>()
+* Custom Property Binding => 傳入參數 需要引入 Input , Output 
+* Local Reference => Element 上面掛#tag , only use in template pass element value into function ,not typescript code
+* ViewChild => 用於typescript code , 需要引入 ViewChild ,用法相同於local reference , 這兩種方法都是在避免傳入資訊給上下層 不用特別設定two way binding , 只在最後的時候送出值
+  
