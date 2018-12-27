@@ -63,4 +63,5 @@ ngModel 應該是 directive
 * Custom Property Binding => 傳入參數 需要引入 Input , Output 
 * Local Reference => Element 上面掛#tag , only use in template pass element value into function ,not typescript code
 * ViewChild => 用於typescript code , 需要引入 ViewChild ,用法相同於local reference , 這兩種方法都是在避免傳入資訊給上下層 不用特別設定two way binding , 只在最後的時候送出值
-  
+#js by value ,by reference
+https://pjchender.blogspot.com/2016/03/javascriptby-referenceby-value.html
