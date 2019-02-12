@@ -51,11 +51,41 @@ ngModel 應該是 directive
 
 ### Directive
 
+在direcive內 還是可以透過renderer的方法去操縱dom
+
 \*ngif
 
-> - strucutre directive => add or remove element
+> strucutre directive => add or remove element
 
+strucutre directive
+```
+<ng-template [ngIf]="!onlyOdd">
+....
+</ng-template>
+```
+>實際上是ng-template 產生的區塊 他只是掛上*號放入
+
+
+[ngClass]
 > attribute directive => change element they pleace on
+```
+@Directive({
+    selector: '[appBasicHighlight]'
+})
+```
+>如果selector 沒有加[]他代表示 element
+
+attribute directive
+```
+appEnHanceHighlight="yellow" 
+```
+>代表是字串 特別寫法一般是使用這個
+
+```
+[appEnHanceHighlight]="'yellow'"
+```
+並且透過hostBinding去指定變數
+
 
 # Data Binding
 * View Encapsulation CSS 作用於當下的TEMPLATE (Shadow Dom 技術 )  可以設定套用成全部
