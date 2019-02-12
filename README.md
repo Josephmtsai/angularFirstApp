@@ -95,3 +95,16 @@ appEnHanceHighlight="yellow"
 * ViewChild => 用於typescript code , 需要引入 ViewChild ,用法相同於local reference , 這兩種方法都是在避免傳入資訊給上下層 不用特別設定two way binding , 只在最後的時候送出值
 #js by value ,by reference
 https://pjchender.blogspot.com/2016/03/javascriptby-referenceby-value.html
+
+### Custom Directive
+
+`ng g d`
+`ng g directive`
+在 constructor 內定義 private 的 var 在整個 class 內都可以使用
+
+使用 rendererv2 避免直接操作 dom 元素
+https://stackoverflow.com/questions/47342921/angular-direct-dom-access
+
+使用@HostListener 去監聽 event 去修改 element
+
+@HostBinding('style.backgroundColor') dom property don't know dashs so we use Bigger C
